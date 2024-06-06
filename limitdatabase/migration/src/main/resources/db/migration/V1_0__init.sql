@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS limits (
+ id BIGSERIAL PRIMARY KEY,
+ user_limit NUMERIC(10,2)
+);
+
+CREATE TABLE IF NOT EXISTS configuration (
+ id BIGSERIAL PRIMARY KEY,
+ name VARCHAR(50),
+ value VARCHAR(50)
+);
