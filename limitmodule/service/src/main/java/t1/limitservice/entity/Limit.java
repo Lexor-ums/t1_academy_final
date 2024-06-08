@@ -1,5 +1,4 @@
-package t1.limitdatabasestarter.entity;
-
+package t1.limitservice.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,22 +6,20 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "configuration")
-public class Configuration {
+@Table(name = "limits")
+public class Limit {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "name")
-    private String name;
-
-    @Column(name = "value")
-    private String value;
-
+    @Column(name = "user_limit")
+    private BigDecimal limit;
 }

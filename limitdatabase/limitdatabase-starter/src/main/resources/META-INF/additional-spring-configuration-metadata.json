@@ -1,9 +1,0 @@
-{
-  "properties": [
-    {
-      "name": "caching.spring.hotelListTTL",
-      "type": "java.lang.Long",
-      "defaultValue": 600000
-    }
-  ]
-}
